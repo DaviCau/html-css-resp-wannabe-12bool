@@ -1,10 +1,11 @@
 .row {
   margin: 100px auto 0;
+  padding: 20px 0;
 }
 
 /* BLOCCO LEZIONI */
-#lezioni h1 {
-  margin-bottom: 20px;
+#lezioni .container {
+  margin-top: 20px;
 }
 
 #lezioni .row img {
@@ -23,20 +24,23 @@
   text-align: center;
 }
 
+#steps .container {
+  margin-top: 20px;
+}
+
 /* BLOCCO PERCHE */
 #why {
   text-align: center;
 }
 
 #why .container [class*="col-"] {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-top: 80px;
 }
 
 #why img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 40px
 }
 
 /* COMMON */
@@ -46,4 +50,70 @@
 
 img {
   height: 200px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+  .row {
+    margin: 0;
+    padding: 30px 0;
+  }
+  
+  #lezioni {
+    background-color: #f2f2cd;
+  }
+  
+  #steps {
+    background-color: white;
+  }
+
+  #steps .container div:last-child {
+    margin-top: 30px;
+  }
+  
+  img {
+    height: 150px;
+  }
+  #why img {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .row {
+    margin: 0;
+    padding: 30px 30px 0;
+  }
+
+  [class*="col-"] .container [class*="col-"] {
+    padding-bottom: 30px;
+  }
+
+  #lezioni {
+    background-color: #f2f2cd;
+  }
+
+  #steps {
+    background-color: white;
+  }
+
+  #why {
+    background-color: #f2f2cd;
+  }
+
+  #why .container {
+    margin-top: 20px;
+  }
+
+  #why .container [class*="col-"] {
+    margin-top: 0;
+  }
+
+  img {
+    height: 150px;
+  }
+  #why img {
+    padding: 30px;
+  }
 }
